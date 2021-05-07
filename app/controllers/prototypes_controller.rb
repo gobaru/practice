@@ -2,6 +2,7 @@ class PrototypesController < ApplicationController
   # before action :move_to_index, except: [:index, :show]
 
   def index
+    @prototypes = Prototype.all
   end
 
   def new
